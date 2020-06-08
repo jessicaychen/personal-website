@@ -77,19 +77,8 @@ header a:hover{
 			} 
 } 
 
-
-#introduction img{
-	float:left;
-	padding-right: 25px;
-}
-
-#introduction h2{
-	padding-top: 20px;
-}
-
-#introduction p{
-	padding-left: 10px;
-	padding-top: 10px;
+#resume h1{
+	text-align: center;
 }
 
 #icons .container {
