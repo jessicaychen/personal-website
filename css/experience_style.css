@@ -59,13 +59,13 @@ header a:hover{
 }
 
 
-/* Introduction */
+/* Experience */
 
-#introduction{
-	padding-top:70px;
+#experience{
 	animation: fadeInAnimation ease 2s; 
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
+	box-sizing:border-box;
 } 
 	
 @keyframes fadeInAnimation { 
@@ -78,23 +78,83 @@ header a:hover{
 } 
 
 
-#introduction img{
-	float:left;
-	padding-right: 25px;
+/* Boxes */
+#boxes{
+  margin-top:20px;
+  margin-left:25px; /*made bottom row shift*/
 }
 
-#introduction h2{
-	padding-top: 20px;
+#boxes ul{
+	list-style: none;
 }
 
-#introduction p{
-	padding-left: 10px;
-	padding-top: 10px;
+#boxes h1{
+	text-align: center;
+	font-size: 22px;
+}
+
+#boxes .box{
+  float:left;
+  text-align: center;
+  width:30%;
+  padding:10px;
+}
+
+#boxes .box img{
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+#boxes a:link{
+	text-decoration: none;
+	text-decoration-color: #808080;
+}
+
+#boxes .overlay{
+  position: relative;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height: 300px;
+  width: 300px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #000000;
+}
+
+#boxes .text {
+  color: white;
+  font-size: 15px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#boxes .box:hover .overlay {
+  opacity: 1;
+}
+
+
+
+
+
+footer{
+	padding:10px;
+	margin-top:30px;
+	color:#808080;
+	text-align: center;
 }
 
 #icons .container {
 	width: 80%;
 	margin: auto;
+	min-height: 30px;
 	overflow: hidden;
 	display: flex;
     justify-content: center;
@@ -102,18 +162,18 @@ header a:hover{
 
 #icons a{
 	overflow: hidden;
-	padding: 0px 10px 0px 3px;
+}
+
+#icons img{
+	transition: transform 0.2s;
+  	transform: scale(1);
+  	padding: 7px;
+  	padding-bottom: 0px;
+	margin: 0 auto;
 }
 
 #icons img:hover{
 	opacity: 0.5;
+	transform: scale(1.2);
 }
-
-footer{
-	padding:10px;
-	margin-top:140px;
-	color:#808080;
-	text-align: center;
-}
-
 
