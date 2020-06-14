@@ -6,8 +6,8 @@
 		<meta name="viewport" content="width=device-width">
 		<meta name="description" content="Personal Website">
 		<meta name="keywords" content="personal website, resume, porfolio">
-		<meta name="author" content="Jessica Chen">
-		<title>Jessica Chen</title>
+		<meta name="author" content="Jessica Y. Chen">
+		<title>Jessica Y. Chen</title>
 		<link rel="stylesheet" href="./css/experience_style.css">
 		<link rel="icon" href="./img/icon.png">
 	</head>
@@ -16,8 +16,8 @@
 		<header>
 			<div class="container">
 				<div id="branding">
-					<h1>Jessica Y. Chen</h1>
-			</div>
+					<li><a href="index.html">Jessica Y. Chen</a></li>
+				</div>
 		
 			<nav>
 				<ul>
@@ -31,40 +31,116 @@
 		</header>
 
 		<section id="experience">
-			<section id="boxes">
-	      		<div class="container">
-	      			<h1>Research Projects</h1>
-	        		<div class="box">
-						<img src="./img/retinal.png" alt="retinal" width="300px", height="=300px">
-						<div class="overlay">
-							<div class="text">Advanced Robotic Eye Surgery Lab</div>
-							<div class="text">August 2019 - March 2020</div>
-						</div>
-	          			<h3>Retinal Layer Segmentation Project</h3>
-						<p> Used MATLAB to develop an algorithm to perform real-time image and data processing of OCT volume scans to extract the coordinate of a certain feature with user input, later to be implemented in a prototype for retinal robotic eye surgery. Utilized averaging of image planes, Gaussian blur, polynomial fitting, and removal of outliers to reduce image noise and optimize image segmentation.</p>
-						<ul><li><a href="https://github.com/jessicaychen/OCT-Image-Processing-Algorithms" target="_blank">Github Repository</a></li></ul>
-	        		</div>
-	        		<div class="box">
-						<img src="./img/orbital.png" alt="orbital" width="300px", height="=300px">          	
-						<h3>Orbital Fat Volume Analysis</h3>
-	          			<p>Ocular Motility Lab</p>
-						<p>August 2019 - December 2020</p>
-						<p>Manually segmented the orbit and intra-orbital contents in MRI volume scans of 44 subjects. Used ImageJ to batch process the images and calculate the orbital orbital fat volume in different sections. Used SPSS to analyze the difference in orbital fat between controls and patients with Primary Open Angle Glaucoma with regular intra-ocular pressure and had received prostaglandin treatment.</p>
-	        		</div>
-	        		<div class="box">
-						<img src="./img/choroidal.png" alt="choroidal" width="300px", height="=300px">          
-						<h3>Choroidal Volume Analysis</h3>
-						<p>Ocular Motility Lab</p>
-						<p>January 2019 - October 2019</p>
-						<p>Scanned 40 subjects’ eyes in different gaze positions and extracted optical coherence tomography (OCT) volume B-scans. Manually segmented the choroid in Materialise Mimics in young and old subject groups. Conducted statistical analyses of difference in volume reduction in SPSS.  Documented results in a first-authored paper.</p>
-						<ul><li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2753272" target="_blank">Article Link</a></li></ul>
-	        		</div>
-	        		<div class="box">
-	         			<img src="./img/enface.png" alt="en face" width="300px", height="=300px">
-						<h3>En Face Image Analysis</h3>
-						<p></p>
-						<ul><li><a href="https://www.sciencedirect.com/science/article/pii/S0002939419304180?via%3Dihub" target="_blank">Article Link</a></li></ul>
-	      			</div>
+			<div class="container">
+				<h1>Research Projects</h1>
+			</div>
+			
+			<section id="research_projects">
+	      		<div class="big-container">
+
+	      		<div class="project-container">
+	      			<div class="title">Posterior Capsule Segmentation</div>
+	      			<li><a href="https://github.com/jessicaychen/OCT-Image-Processing-Algorithms" target="_blank">Github Repository</a></li>
+		  				<div class="project">
+		  					<a href="experience/cataract.html"> 
+		  					<img src="./img/pc.png" alt="cataract" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Advanced Robotic Eye Surgery Lab</p>
+		  						<p class="date">June 2020 - Present</p>
+		  						<p class="descript">Edge detection of the posterior capsule for robotic cataract surgery.</p>
+		  						<p class="image_modality">OCT imaging</p>
+		  						<p class="softwares">MATLAB</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+	  			<div class="project-container">
+	  				<div class="title">Bottom Layer Retinal Segmentation</div>
+	  				<li><a href="https://github.com/jessicaychen/OCT-Image-Processing-Algorithms" target="_blank">Github Repository</a></li>
+		  				<div class="project">
+		  					<a href="experience/retinal.html"> 
+		  					<img src="./img/retinal.png" alt="retinal" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Advanced Robotic Eye Surgery Lab</p>
+		  						<p class="date">August 2019 - March 2020</p>
+		  						<p class="descript">Edge detection of the retinal bottom layer for robotic retinal injection.</p>
+		  						<p class="image_modality">OCT imaging</p>
+		  						<p class="softwares">MATLAB</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+				<div class="project-container">
+	  				<div class="title">Orbital Fat Volume Analysis</div>
+	  				<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2766247&resultClick=1" target="_blank">First Author - Article Link</a></li>
+		  				<div class="project">
+		  					<a href="experience/orbital.html"> 
+		  					<img src="./img/orbital.png" alt="retinal" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Ocular Motility Lab</p>
+		  						<p class="date">August 2019 - December 2019</p>
+		  						<p class="descript">Analysis of orbital fat volume after treatment with prostaglandin agonists.</p>
+		  						<p class="image_modality">MRI</p>
+		  						<p class="softwares">ImageJ • GraphPad Prism • Excel • SPSS</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+	  			<div class="project-container">
+	  				<div class="title">Choroidal Volume Analysis</div>
+	  				<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2753272" target="_blank">First Author - Article Link</a></li>
+		  				<div class="project">
+		  					<a href="experience/choroidal.html"> 
+		  					<img src="./img/choroidal.png" alt="choroidal" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Ocular Motility Lab</p>
+		  						<p class="date">January 2019 - October 2019</p>
+		  						<p class="descript">Analysis of choroidal volume change in different gaze positions.</p>
+		  						<p class="image_modality">OCT B-scan</p>
+		  						<p class="softwares">Materialise Mimics • GraphPad Prism • Excel • SPSS</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+	  			<div class="project-container">
+	  				<div class="title">Atrophy and Stiffening Analysis</div>
+	  				<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2769367&resultClick=1" target="_blank">First Author - Abstract Link</a></li>
+		  				<div class="project">
+		  					<a href="experience/ppa.html"> 
+		  					<img src="./img/ppa.png" alt="ppa" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Ocular Motility Lab</p>
+		  						<p class="date">August 2019 - December 2019</p>
+		  						<p class="descript">Analysis of peripapillary atrophy in relation to optic disc deformation in different gaze positions.</p>
+		  						<p class="image_modality">OCT A-scan</p>
+		  						<p class="softwares">ImageJ • Adobe Photoshop • GraphPad Prism • Excel • SPSS</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+	  			<div class="project-container">
+	  				<div class="title">En Face Image Analysis</div>
+	  				<li><a href="https://www.sciencedirect.com/science/article/pii/S0002939419304180?via%3Dihub" target="_blank">Second Author - Article Link</a></li>
+		  				<div class="project">
+		  					<a href="experience/enface.html"> 
+		  					<img src="./img/enface.png" alt="enface" width="30%", height="=30%" class="image"> 
+		  					<div class="fade_description">
+		  						<p class="location">Ocular Motility Lab</p>
+		  						<p class="date">January 2020</p>
+		  						<p class="descript">Analysis of the deformation of peripapillary retina in different gaze positions.</p>
+		  						<p class="image_modality">OCT A-scan</p>
+		  						<p class="softwares">Adobe Photoshop • ImageJ • GraphPad Prism • Excel • SPSS</p>
+		  					</div>
+		  					</a>
+		  				</div>
+	  			</div>
+
+
     			</div>
 	    	</section>
 	    	
@@ -72,11 +148,13 @@
 	    		<div class="container">
 	    			<h1>Publications</h1>
 		    		<ol>
-		    			<li>Chen JY, Le A, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Orbital Fat Volume After Treatment with Topical Prostaglandin Agonists. Invest Ophthalmol Vis Sci. 2020 February [Accepted].</li>
-		    			<li>Chen JY, Le A, De Andrade L, Goseki T, Demer JL. Compression of the Choroid by Horizontal Duction. Invest Ophthalmol Vis Sci. 2019 September [Accepted, In Press].</li>
-		    			<li>Le A, Chen J, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Optic Disc Deformation in Primary Open Angle Glaucoma with Peripapillary Atrophy. Invest Ophthalmol Vis Sci. 2019 August [Under Review].</li>
-		    			<li>Le A, Chen J, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Adduction Effects on Optic Disc and Peripapillary Region in Primary Open Angle Glaucoma with Normal Intraocular Pressure. Am J Ophthalmol. 2019 August [Under Review].</li>
-		    			<li>Le A, Chen J, Lesgart M, Gawargious B, Suh SY, Demer JL. Age-dependent Deformation of the Optic Nerve and Peripapillary Retina by Horizontal Duction. Am J Ophthalmol. 2019 July [In Press].</li>
+		    			<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2769367&resultClick=1" target="_blank"><b>Chen JY</b>, Le A, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Peripapillary Atrophy (PPA) Indicates Optic Disc Stiffening in Primary Open Angle Glaucoma (POAG) without Statistically Elevated Intraocular Pressure (IOP). <i>Invest Ophthalmol Vis Sci ARVO Annual Meeting Abstract.</i> 2020 May [In Press]</a></li>
+		    			<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2766247&resultClick=1" target="_blank"><b>Chen JY</b>, Le A, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Orbital Fat Volume After Treatment with Topical Prostaglandin Agonists. <i>Invest Ophthalmol Vis Sci.</i> 2020 May [In Press].</a></li>
+		    			<li><a href="https://www.ajo.com/article/S0002-9394(20)30109-4/pdf" target="_blank">Le A, <b>Chen J</b>, Lesgart M, Gawargious B, Suh SY, Demer JL. Reply to Comment on Age-Dependent Deformation of the Optic Nerve Head and Peripapillary Retina by Horizontal Duction. <i>Am J Ophthalmol.</i> 2020 April [In Press]</a></li>
+		    			<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2753272&resultClick=1" target="_blank"><b>Chen JY</b>, Le A, De Andrade L, Goseki T, Demer JL. Compression of the Choroid by Horizontal Duction. <i>Invest Ophthalmol Vis Sci.</i> 2019 September [In Press]. </a></li>
+		    			<li>Le A, <b>Chen J</b>, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Optic Disc Deformation in Primary Open Angle Glaucoma with Peripapillary Atrophy. <i>Invest Ophthalmol Vis Sci.</i> 2019 August [Under Review].</li>
+		    			<li>Le A, <b>Chen J</b>, Giaconi JA, Kouros N, Law SK, Bonelli L, Coleman A, Caprioli J, Demer JL. Adduction Effects on Optic Disc and Peripapillary Region in Primary Open Angle Glaucoma with Normal Intraocular Pressure. <i>Am J Ophthalmol.</i> 2019 August [Under Review].</li>
+		    			<li><a href="https://www.sciencedirect.com/science/article/pii/S0002939419304180?via%3Dihub" target="_blank">Le A, <b>Chen J</b>, Lesgart M, Gawargious B, Suh SY, Demer JL. Age-dependent Deformation of the Optic Nerve and Peripapillary Retina by Horizontal Duction. <i>Am J Ophthalmol.</i> 2019 July [In Press].</a></li>
 		    		</ol>
 
 		    		<h1>Presentations</h1>
