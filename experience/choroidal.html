@@ -8,7 +8,7 @@
 		<meta name="keywords" content="personal website, resume, porfolio">
 		<meta name="author" content="Jessica Y. Chen">
 		<title>Jessica Y. Chen</title>
-		<link rel="stylesheet" href="./css/cataract_style.css">
+		<link rel="stylesheet" href="./css/choroidal_style.css">
 		<link rel="icon" href="../img/icon.png">
 	</head>
 	
@@ -32,44 +32,35 @@
 
 		<section id="project">
 			<div class="container">
-				<h1 class="title">Posterior Capsule Segmentation</h1>	
+				<h1 class="title">Choroidal Volume Analysis</h1>	
 				<div class="description">
-					<p>Advanced Robotic Eye Surgery Lab @ UCLA</p>
-					<p>June 2020 - Present</p>
+					<p>Ocular Motility Lab @ UCLA</p>
+					<p>January 2019 - October 2019</p>
 				</div>
 
-				<img src="../img/pc.png" alt="cataract" width="200px", height="200px" class="image"> 
+				<img src="../img/choroidal.png" alt="choroidal" width="200px", height="200px" class="image"> 
 
 				<div class="summary">
 					<h3>Background </h3>
-						<p>Cataracts are known to cause vision impairment and require surgery to replace the lens. In cataract surgery, the cloudy natural cataract lens is phacoemulsified or cut up and removed while an intraocular lens is inserted. While the complication rate is relatively low, complications such as posterior capsular tears may occur. A torn posterior capsule (PC) is dangerous, as it allows for cut up pieces of cataract to potentially fall through into the vitreous cavity. With robotic cataract surgery, it is thus necessary to accurately detect the location of the PC in real time using optical coherence tomography (OCT).</p>
+						<p>In angles of adduction (looking towards nose), the optic nerve is known to become tethered, causing deformation to the peripapillary retina. The choroidal layer is a layer of blood vessels under the retina that has important functions (i.e. heat sink). The purpose of this study was to determine choroidal deformation during adduction and abduction (looking towards the temple), and to compare the data between young and old subjects.</p>
 					<h3>
 					Project</h3>
-						<p>I am currently developing an algorithm using MATLAB for the edge detection of the PC in OCT scans. OCT scans are imported as intensity matrices, and the idea is to pre-process the scans using filters to denoise the scans, and then segment the PC using either a shortest-path algorithm or polynomial fitting. A difficulty with this project is the image quality, as these particular scans contain a lot of speckle noise. This project is still a work in progress, but I am so far working with the following techniques:
-							<ul class="steps">
-							Pre-processing
-								<ul class="techniques">
-									<li>Normalization - normalize intensity values for later convolution</li>
-									<li>Gaussian blur - blurs an image to reduce noise and detail</li>
-									<li>Median filter - non-linear digital filtering technique that preserves edges while removing noise</li>
-									<li>Convolution - use a kernel to output a image better suited for edge detection</li>
-								</ul>
-							Edge detection
-								<ul class="techniques">
-									<li>Variation of Dijkstra's Algorithm - finding the shortest path through the highest intensity pixels</li>
-									<li>Polynomial fitting - finding the z-value of maximum intensity in each column and then fitting a 2nd degree curve</li>
-								</ul>
-							</ul>
+						<p>I first assisted in scanning subjects using the optical coherence tomography (OCT) scanner with a specific protocol. After collecting the OCT B-scans (cross-sectional) and arranging them in volume stacks in Materialise Mimics, I manually segmented the choroid to three optic disc radii temporally. Data was organized in Excel and statistically analyzed with IBM SPSS. Graphs were made in GraphPad Prism and figures for the paper were made in Adobe Photoshop.
+						</p>
 
-						A more technical description with figures will be updated on my Github; link is provided below.
+						<p>A thorough description of this study and its results are published; link to the article is provided below.
 						</p>
 					<h3>Links</h3>
 						<ol>
-							<li><a href="https://github.com/jessicaychen/OCT-Image-Processing-Algorithms" target="_blank" class="link">Github Repository: pc-polishing-segmentation-capsule-segmentation</a></li>
-							<li><a href="https://www.uclahealth.org/eye/center-for-advanced-robotic-eye-surgery" target="_blank" class="link">Advanced Robotic Eye Surgery Lab</a></li>
+							<li><a href="https://iovs.arvojournals.org/article.aspx?articleid=2753272" target="_blank" class="link">First Author Publication - <i>Compression of the Choroid by Horizontal Duction</i></a></li>
+							<li><a href="https://www.uclahealth.org/eye/ocular-motility" target="_blank" class="link">Ocular Motility Lab</a></li>
 						</ol>
 					<h3>Notes</h3>
-						<p>Special thanks to my mentor, Matthew Gerber, PhD, who always gives thorough and clear advice on techniques and approaches.</p>
+						<p>Special thanks to:
+							<li class="ty">Alan Le, PhD (graduate student) for spawning project ideas and introducing me to scientific analyses with biomedical imaging.</li>
+							<li class="ty">Nicolasa Desalles (lab manager) for recruiting subjects and helping with efficient data retrieval.</li>
+							<li class="ty">Dr. Joseph L. Demer, MD, PhD (PI) for heavily revising drafts of the paper and supporting the project.</li>
+						</p>
 				</div>
 			</div>
 		</section>

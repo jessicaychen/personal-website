@@ -8,7 +8,7 @@
 		<meta name="keywords" content="personal website, resume, porfolio">
 		<meta name="author" content="Jessica Y. Chen">
 		<title>Jessica Y. Chen</title>
-		<link rel="stylesheet" href="./css/cataract_style.css">
+		<link rel="stylesheet" href="./css/retinal_style.css">
 		<link rel="icon" href="../img/icon.png">
 	</head>
 	
@@ -42,24 +42,22 @@
 
 				<div class="summary">
 					<h3>Background </h3>
-						<p>For precise semi-automated retinal injection in surgery, it is necessary for </p>
+						<p>For precise semi-automated retinal injection in surgery, it is necessary for surgeons to know the depth of the bottom layer of the retina at any point they select in their field of view. The purpose behind the project was: Given a user-selected input of (x,y) coordinates from a top-down view of the retina from an scan, determine the approximate z-coordinate of the bottom layer of the retina through OCT volume scan image segmentation.</p>
 					<h3>
 					Project</h3>
-						<p>The purpose behind the project was: Given a user-selected input of (x,y) coordinates from a top-down view of the retina from an scan, determine the approximate z-coordinate of the bottom layer of the retina through OCT volume scan image segmentation. Bigger purpose: edge detection for robotic retinal injection.
-
-						I developed an algorithm using MATLAB to detect the bottom edge of the "retina" in a pig-eye model in OCT volume scans. The OCT scans are imported as intensity matrices, and I pre-processed the scans using filters to denoise the scans. A difficulty with this project is the fact that the ROI is the bottom layer, not the top layer. The following techniques were used:
+						<p>I developed a functional algorithm using MATLAB to detect the bottom edge of the "retina" in a pig-eye model in OCT volume scans. The OCT scans are imported as intensity matrices, and I pre-processed the scans using filters to denoise the scans. A difficulty with this project is the fact that the ROI is the bottom layer, not the top layer; I got around this by first detecting the top layer and blacking it out. The following techniques were used:
 							<ul class="steps">
 							Pre-processing
 								<ul class="techniques">
-									<li>Normalization - normalize intensity values for later convolution</li>
-									<li>Gaussian blur - blurs an image to reduce noise and detail</li>
-									<li>Median filter - non-linear digital filtering technique that preserves edges while removing noise</li>
-									<li>Convolution - use a kernel to output a image better suited for edge detection</li>
+									<li>Truncation - smaller ROI for efficiency</li>
+									<li>Averaging consecutive scans - smoothes an image and denoises</li>
+									<li>Sobel filter - emphasizes edges using two 3x3 kernels convolved with the original image to produce gradient approximations</li>
 								</ul>
 							Edge detection
 								<ul class="techniques">
-									<li>Variation of Dijkstra's Algorithm - finding the shortest path through the highest intensity pixels</li>
-									<li>Polynomial fitting - finding the z-value of maximum intensity in each column and then fitting a 2nd degree curve</li>
+									<li>Detect top layer by finding maximum intensity in each column, then black out the region</li>
+									<li>Re-detect the bottom layer by finding maximum intensity</li>
+									<li>Remove outliers from the data in the selected region and fit a surface; output of the surface function gives the depth</li>
 								</ul>
 							</ul>
 
