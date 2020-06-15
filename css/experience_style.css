@@ -179,7 +179,7 @@ header a:hover{
 	top: 0;
     left: 14px;
     right: 14px;
-    bottom: 24px;
+    bottom: 0;
     text-align: center;
 }
 
@@ -190,18 +190,25 @@ header a:hover{
 	top: 0;
 	background-color: white;
 	height: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }
 
 
 .location {
-	padding-top: 15%;
 	font-size: 0.95em;
 	color:black;
+	margin:0;
+	display: flex;
 }
 
 .date {
 	font-size: 0.85em;
 	color:black;
+	display: flex;
+	margin: 2%;
 }
 
 .descript {
@@ -209,11 +216,15 @@ header a:hover{
 	color:#808080;
 	padding-right:5%;
 	padding-left:5%;
+	display: flex;
+	margin: 2%;
 }
 
 .image_modality{
 	font-size: 0.85em;
-	color:#808080
+	color:#808080;
+	display: flex;
+	margin: 2%;
 }
 
 .softwares{
@@ -221,6 +232,8 @@ header a:hover{
 	color:#808080;
 	padding-right:5%;
 	padding-left:5%;
+	display: flex;
+	margin: 2%;
 }
 
 /*Other*/
