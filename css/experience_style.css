@@ -7,11 +7,18 @@
     font-weight: bold;
 }
 
+html{
+	height:100%;
+}
 body{
 	font: 15px/1.5 'Work Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #FFFFFF;
+
+	display: flex;
+ 	flex-direction: column;
+ 	height: 100vh;
 }
 
 /* Global */
@@ -75,6 +82,9 @@ header a:hover{
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
 	box-sizing:border-box;
+
+	flex: 1 0 auto; 
+  	padding: 20px;
 } 
 	
 @keyframes fadeInAnimation { 
@@ -122,11 +132,13 @@ header a:hover{
 	overflow: hidden;
 	display: flex;
 	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 20px;
 }
 
-.big-container > div {
+/*.big-container > div {
 	flex:1;
-}
+}*/
 
 .project-container a{
 	text-decoration: none;
@@ -144,6 +156,10 @@ header a:hover{
 	text-align: center;
 	font-weight: bold;
 	font-size: 16px;
+}
+
+.project-container a:hover{
+	color: #C0C0C0;
 }
 
 .image{
@@ -218,15 +234,11 @@ header a:hover{
 	list-style-type: none;
 }
 
-
-
-
-
-footer{
+.footer{
+	flex-shrink: 0;
 	padding:10px;
-	margin-top:30px;
-	color:#808080;
 	text-align: center;
+	color:#808080;
 }
 
 #icons .container {

@@ -7,11 +7,19 @@
     font-weight: bold;
 }
 
+html{
+	height: 100%
+}
+
 body{
 	font: 15px/1.5 'Work Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #FFFFFF;
+
+	display: flex;
+ 	flex-direction: column;
+ 	height: 100vh;
 }
 
 /* Global */
@@ -75,6 +83,9 @@ header a:hover{
 	animation: fadeInAnimation ease 2s; 
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
+
+	flex: 1 0 auto;
+  	padding: 20px;
 } 
 	
 @keyframes fadeInAnimation { 
@@ -100,13 +111,11 @@ header a:hover{
 	padding-top: 10px;
 }
 
-footer{
+.footer{
+	flex-shrink: 0;
 	padding:10px;
-	color:#808080;
 	text-align: center;
-	bottom: 0;
-    position: absolute;
-    width: 100%;
+	color:#808080;
 }
 
 #icons .container {

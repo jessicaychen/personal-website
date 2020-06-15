@@ -7,27 +7,19 @@
     font-weight: bold;
 }
 
-html{
-	height: 100%
-}
-
 body{
 	font: 15px/1.5 'Work Sans', sans-serif;
 	padding: 0;
 	margin: 0;
 	background-color: #FFFFFF;
-
-	display: flex;
-  	flex-direction: column;
-  	height: 100vh;
 }
 
 /* Global */
 .container{
 	width: 80%;
 	margin: auto;
-	overflow: hidden;
-}
+/*	overflow: hidden;
+*/}
 
 header ul{
 	margin: 0;
@@ -75,16 +67,13 @@ header a:hover{
 	color: #C0C0C0;
 }
 
+/* Project */
 
-/* Resume */
-
-#resume{
+#project{
+	padding-top:10px;
 	animation: fadeInAnimation ease 2s; 
 	animation-iteration-count: 1; 
 	animation-fill-mode: forwards; 
-
-	flex: 1 0 auto;
-  	padding: 20px;
 } 
 	
 @keyframes fadeInAnimation { 
@@ -96,8 +85,63 @@ header a:hover{
 			} 
 } 
 
-#resume h1{
+#project img{
+	float:right;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+#project p{
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+
+.title{
 	text-align: center;
+	margin-bottom: 0px;
+}
+
+.description p{
+	text-align: center;
+	margin: 0px;
+}
+
+.description p{
+	color:#808080;
+}
+
+.summary{
+	padding: 20px 50px 20px 50px;
+}
+
+.summary p{
+	color: black;
+	text-align: left;
+}
+
+.summary h3{
+	margin: 0px;
+}
+
+.summary p{
+	margin:0px;
+	padding-bottom: 10px;
+}
+
+.techniques p{
+	padding:0px;
+}
+
+.link{
+	text-decoration: none;
+	color:black;
+	list-style-type: none;
+}
+
+.link:hover{
+	color: #808080;
 }
 
 .footer{
@@ -132,4 +176,6 @@ header a:hover{
 	opacity: 0.5;
 	transform: scale(1.2);
 }
+
+
 
