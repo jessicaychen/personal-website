@@ -99,7 +99,7 @@ header a:hover{
 
 #introduction img{
 	float:left;
-	padding-right: 25px;
+	padding:25px;
 }
 
 #introduction h2{
@@ -109,6 +109,15 @@ header a:hover{
 #introduction p{
 	padding-left: 10px;
 	padding-top: 10px;
+}
+
+#introduction a{
+	text-decoration: none;
+	color:#808080;
+}
+
+#introduction a:hover{
+	color:#C0C0C0;
 }
 
 .footer{
