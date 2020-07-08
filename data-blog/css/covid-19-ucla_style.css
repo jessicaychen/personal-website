@@ -88,6 +88,8 @@ header a:hover{
     text-align: center;
     font-family: "Courier New"
 }
+
+
 /* Page */
 
 .page-content{
@@ -122,96 +124,37 @@ header a:hover{
 	clear: both;
 }
 
-.post-link a:hover{
-	color: #0080FF;
-}
-
-.post-list{
-	margin-left: 0;
-	padding: 0;
-	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
-.post-list ul{
-	margin-bottom: 15px;
-	margin:0;
-	padding:0;
-}
-
-.post-list > li{
-	margin-bottom: 45px;
-    border: 1px solid #666;
-    flex-basis: 27%;
-    max-width: 27%;
-    padding: 2%;
-    margin: 1%;
-}
-
-li {
-    display: list-item;
-}
-
-.post-list .post-link{
-	color: black;
-    font-size: 1.5em;
-}
-
 a {
 	text-decoration: none;
 }
 
-.post-list .featured-image {
-    display: block;
-    margin: 0 auto 15px;
+.home{
+	margin-left: 120px;
+	margin-right: 120px;
 }
 
-.post-list img {
-    max-width: 100%;
-    vertical-align: middle;
+.title h1{
+	font-size: 1.75em;
 }
 
-.post-list h2 {
-    line-height: 1;
-    margin-bottom: 0.2em;
+.one-line-description p{
+	font-size: 1.1em;
+	font-color: #808080;
 }
 
-h2 {
-    font-family: "Hind", sans-serif;
-    font-weight: 600;
-    line-height: 1.2;
-    display: block;
-    font-size: 1.4em;
-    padding-bottom: 8px;
+.graphic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
-.post-list h3 {
-    line-height: 1.2;
-    font-weight: normal;
-    font-size: 0.8em;
-    color: #424242;
+.text a{
+	color: #808080;
 }
 
-h3 {
-	margin-bottom: 15px;
-	margin:0;
-	padding:0;
-	display: block;
-}
-
-.post-list .info {
-    font-size: 0.65em;
-}
-
-.post-list h3 {
-    line-height: 1.2;
-    font-weight: normal;
-    color: #424242;
-    margin-bottom: 15px;
-    margin: 0;
-    padding-bottom: 10px;
+.text a:hover{
+	color: #C0C0C0;
 }
 
 
