@@ -142,11 +142,60 @@ a {
 	font-color: #808080;
 }
 
+.box-container{
+	margin-top: 40px;
+}
+
+div.scrollbox {
+  width: 225px;
+  height: 300px;
+  overflow: scroll;
+  float:left;
+}
+
+.box{
+	border-style: solid;
+	border-color: black;
+	border-radius: 5px;
+	margin: auto;
+	overflow: hidden;
+	background-color: lightblue;
+}
+
+.box p{
+	padding: 5px;
+	margin: 0px;
+}
+
+.date{
+	margin: auto;
+	overflow: hidden;
+	float: left;
+	font-size: 0.9em;
+	padding-bottom: 0px;
+}
+
+.num{
+	margin: auto;
+	overflow: hidden;
+	float: right;
+	font-size: 1.3em;
+	padding-right: 5px;
+}
+
+.descript{
+	margin: 0;
+	/*overflow: hidden;*/
+	/*float: right;*/
+	font-size: 0.75em;
+	bottom: 0;
+}
+
 .graphic {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 50%;
 }
 
 .text a{
