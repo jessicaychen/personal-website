@@ -28,6 +28,12 @@ body{
 	overflow: hidden;
 }
 
+.head-container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+
 header ul{
 	margin: 0;
 	padding: 0;
@@ -35,14 +41,16 @@ header ul{
 
 /* Header */
 header{
-	padding-top: 30px;
+	padding-top: 40px;
 	min-height: 70px;
+	background-color: black;
+	color: white;
 }
 
 header a{
-	color: #808080;
+	color: white;
 	text-decoration: none;
-	text-transform: uppercase;
+	text-transform: lowercase;
 	font-size: 16px;
 }
 
@@ -56,9 +64,15 @@ header #branding{
 	float: left;
 }
 
+header #branding a{
+	color: white;
+	text-transform: lowercase;
+}
+
 header #branding h1{
 	margin: 0;
 }
+
 
 header nav{
 	float: right;
@@ -74,20 +88,6 @@ header a:hover{
 	color: #C0C0C0;
 }
 
-.blog-title {
-	text-align: center;
-	background-color: black;
-}
-
-.blog-title a{
-	font-size: 3em;
-    margin: 0;
-    color: white;
-    text-transform: lowercase;
-    font-weight: bold;
-    text-align: center;
-    font-family: "Courier New"
-}
 /* Page */
 
 .page-content{
